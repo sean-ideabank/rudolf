@@ -29,4 +29,6 @@ ThisBuild / publishTo := {
   if (isSnapshot.value) Some("snapshots" at nexus + "content/repositories/snapshots")
   else Some("releases" at nexus + "service/local/staging/deploy/maven2")
 }
+ThisBuild / sonatypeRepository := "https://s01.oss.sonatype.org/service/local"
+ThisBuild / sonatypeCredentialHost := "s01.oss.sonatype.org"
 ThisBuild / publishMavenStyle := true

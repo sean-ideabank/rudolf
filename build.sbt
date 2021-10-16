@@ -1,9 +1,12 @@
 val scala3Version = "3.0.2"
 
 ThisBuild / name := "rudolf"
-ThisBuild / version := "0.1.0"
+ThisBuild / version := "0.1.1"
 ThisBuild / versionScheme := Some("semver-spec")
 ThisBuild / scalaVersion := scala3Version
+
+sonatypeRepository := "https://s01.oss.sonatype.org/service/local"
+sonatypeCredentialHost := "s01.oss.sonatype.org"
 
 ThisBuild / libraryDependencies ++= Seq(
   "org.slf4j" % "slf4j-simple" % "2.0.0-alpha5",
