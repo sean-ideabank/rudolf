@@ -1,5 +1,5 @@
 ThisBuild / credentials += Credentials(Path.userHome / ".sbt" / "sonatype_credentials")
-ThisBuild / organization := "works.ideabank.rudolf"
+ThisBuild / organization := "works.ideabank"
 ThisBuild / organizationName := "ideabank"
 ThisBuild / organizationHomepage := Some(url("https://www.ideabank.works"))
 

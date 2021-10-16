@@ -80,7 +80,7 @@ trait PageHandler {
     paths match {
       case "img" :: imgName :: Nil => loadImage(response, imgName)
       case "pages" :: rest => loadWebpage(request, response, rest)
-      case "favicon.ico" :: _ => loadImage(response, "favicon/favicon-16x16.png")
+      case "favicon.ico" :: _ => loadImage(response, "favicon.png")
       case "css" :: cssName :: Nil => loadFile(response, "/css/" + cssName)
       case _ => loadWebpage(request, response, List("index.html"))
     }
